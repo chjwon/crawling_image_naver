@@ -16,7 +16,8 @@ for i in img:
     print(n)
     imgUrl = i['data-source']
     with urlopen(imgUrl) as f:
-        with open('C:/Users/chjwo/Desktop/alllfolder/crawling/'+str(n)+'.jpg','wb') as h:
+        #plz fix the path of the image
+        with open('path of the image'+str(n)+'.jpg','wb') as h:
             img = f.read()
             h.write(img)
 
